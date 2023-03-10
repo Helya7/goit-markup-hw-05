@@ -117,10 +117,9 @@ body {
     width: 100%;
     height: 4px;
     display: block;
-    background-color: var(--color-active);
+    background-color: currentColor;
     border-radius: 2px;
     position: absolute;
-    left: 0;
     bottom: 0;
     transform: translateY(7px);
     content: '';
@@ -324,26 +323,6 @@ body {
     padding: 12px 24px;
 }
 
-/* .button-filter.all {
-    width: 69px;
-}
-
-.button-filter.web-site {
-    width: 116px;
-}
-
-.button-filter.app {
-    width: 78px;
-}
-
-.button-filter.desing {
-    width: 101px;
-}
-
-.button-filter.marketing {
-    width: 126px;
-}
-  */
 .button-filter:hover {
     color: var(--priority-text-color);
     background-color: var(--color-active);
@@ -376,6 +355,37 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     text-decoration: none;
+}
+
+.text-cards {
+    background-color: var(--button-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms;
+}
+
+.img-card:hover .text-cards {
+    transform: translateY(0);
+}
+
+.img-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.paragraph-card {
+    position: absolute;
+    color: var(--bgr-team);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px;
 }
 
 .section-footer {
